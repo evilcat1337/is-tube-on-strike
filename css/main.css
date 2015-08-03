@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: #fff;
+    color: #1B3F95;
+    font-family: 'Montserrat', Tahoma, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Tahoma, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a, a:visited {
+    border-bottom: 2px dotted #1B3F95;
+    color: #1B3F95;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-style: solid;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 98%;
+    text-align: center;
+    padding: 5% 0;
+}
+
+#answer {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+}
+
+#time-left {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.colophon {
+    padding: 5% 0;
+}
+
+.colophon ul li {
+    margin-bottom: 1.5rem;
+}
+
+.cookies {
+    display: block;
+    font-size: .8rem;
+    margin-top: 5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+           -moz-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
+}

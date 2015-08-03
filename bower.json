@@ -1,0 +1,27 @@
+{
+  "name": "is-tube-on-strike",
+  "version": "0.0.0",
+  "authors": [
+    "Conrad Gray <hello@conradthegray.com>"
+  ],
+  "description": "Is Tube on strike?",
+  "keywords": [
+    "tube",
+    "london",
+    "strike",
+    "fluffy",
+    "bunnies"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "moment": "~2.10.6"
+  }
+}
