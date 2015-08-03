@@ -15,13 +15,19 @@
     var now = moment();
     var strikeStart = moment(strike.start);
     var strikeEnd = moment(strike.end);
+    var preStrike = moment(strikeStart).subtract(24, 'hours');
 
     var $answer = $('#answer');
+    var msg = 'NOPE'; // Let's be optimistic!
 
     if (now.isBetween(strikeStart, strikeEnd)) {
-        $answer.html('YEP...');
-    } else {
-        $answer.html('NOPE');
+        // The strike is on
+        msg = 'YEP...';
+    } else if (now.isBetween(preStrike, strikeStart)) {
+        // We are 24 hours before the strike
+        msg = 'NOT YET';
     }
+
+    $answer.html(msg);
 
 })();
